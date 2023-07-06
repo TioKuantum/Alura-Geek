@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1.0" name="viewport">
+    <title> Productos Alura Geek</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link href="styles/admin-productos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabecera -->
+  <header class="header container">
+    <div class="header__box">
+      <a class="header__logo" href="/" id="header">
+        <img class="header__logo--img" src="images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <form action="/search" method="POST" class="header__form">
+        <input type="search" id="h__input" name="search" class="header__input" minlength="3"
+          placeholder="¿Qué deseas buscar?">
+        <button type="submit" style="display: none"></button>
+      </form>
+    </div>
+    
+  </header>
+    <main>
+        <section class="products admin-products">
+            <div class="product__container">
+                <div class="product__header">
+                    <h2 class="product__title">Todos los productos</h2>
+                    <a href="nuevoProducto.html">
+                        <button class="agregar-producto">Agregar producto</button>
+                    </a>
+                </div>
+                <section class="products">
+                    <div class="product__container">
+                        <div class="product__list" data-adminProducts></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+      <!-- Contato -->
+  <section class="contacto container">
+    <div class="contacto__links">
+      <a class="contacto__links--logo" href="#header">
+        <img src="/images/logo.svg" alt="Loja Alura Geek" />
+      </a>
+      <ul>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Programa fidelidade</a></li>
+        <li><a href="#">Nuestra Tiendas</a></li>
+        <li><a href="#">Quiero ser franquiciado</a></li>
+        <li><a href="#">Anuncie aqui</a></li>
+      </ul>
+    </div>
+
+    <form action="" class="contacto__form">
+      <fieldset>
+        <legend>Hable con nosotros</legend>
+        <input id="name" type="text" class="" data-type="contact" maxlength="40" placeholder="Nombre" required />
+        <span role="alert"></span>
+        <textarea name="" id="message" class="" data-type="contact" placeholder="Escriba su Mensaje" maxlength="120"
+          required></textarea>
+        <span role="alert"></span>
+        <button type="submit" class="mensaje">
+          Enviar mensaje
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p id="portfolio">
+      Desarrollado por Uriel Rivera Cantera
+    </p>
+    <p>2023</p>
+  </footer>
+   
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+
+  /* ========== SINGLE PRODUCT PAGE ========== */
+  
+  .productos {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 8rem ;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .productos__text{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 6.5rem;
+    padding-bottom: 1rem;
+    
+   
+  }
+
+  h2{
+    font-size: 2rem;
+    color: #464646;
+  }
+  .seccion__productos{
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding: 1rem;
+    
+  }
+
+  .producto__box{
+    
+    width: 176px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 2rem;
+    margin-left: 4rem;
+  
+    
+    
+  }
+
+  .mostar__todo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2A7AE4;
+    padding: 0;
+    text-decoration: none;
+  }
+  .producto__img{
+    width: 256px;
+   
+  }
+
+  .producto__img,#reloj{
+    height: 170.66px;
+   
+  }
+  
+  .producto__img + h3{
+    font-size: .5rem;
+    line-height: 2;
+    text-align: justify;
+   
+  }
+
+  .producto__descripcion{
+    height: 80px;
+    padding-top: 1rem;
+    font-family: Raleway;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+  }
+  .productos__card--view{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+   
+    color: #2A7AE4;
+    padding: 0;
+  }
+  .ver__producto{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  

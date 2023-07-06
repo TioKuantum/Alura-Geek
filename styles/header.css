@@ -1,0 +1,71 @@
+
+
+.header {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 1rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+  }
+ /* .header__logo {
+    padding: 0;
+  }
+  
+  .header__logo--img {
+    width: 6.25rem;
+  }*/
+
+  .header__box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header__input{
+    width: 393px;
+    padding: 8px 16px;
+    align-items: center;
+    background-image: url('/images/search.svg');
+    background-position: center right 1rem;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: #F5F5F5;
+    color: #A2A2A2;
+  }
+
+  .header__button{
+    padding: 1rem;
+    border: 1px solid  var(--color_fondo-o-letra_botones-2);
+    color: var(--color_fondo-o-letra_botones-2);
+    padding: .7rem 2.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .header__admin-button{
+    
+    border: 1px solid  var(--color_fondo-o-letra_botones-2);
+    color: var(--color_fondo-o-letra_botones-2);
+    padding: .7rem 2.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+ /* .lupa{
+    position: relative;
+    left: -35px;
+  }*/
+ /* .header__input {
+    display: flex;
+    width: 100%;
+    
+    margin-left: 2rem;
+    padding: 0.75rem 1rem;
+   
+    
+    
+    
+   
+  }*/

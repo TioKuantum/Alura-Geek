@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+  <meta content="width=device-width initial-scale=1.0" name="viewport">
+  <title> Producto Nuevo</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css" >
+  <link rel="stylesheet" href="styles/nuevo_producto.css">
+  <link rel="stylesheet" href="styles/contacto.css">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header class="header container">
+    <div class="header__box">
+      <a class="header__logo" href="/" id="header">
+        <img class="header__logo--img" src="images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <form action="/search" method="POST" class="header__form">
+        <input type="search" id="h__input" name="search" class="header__input" minlength="3"
+          placeholder="¿Qué deseas buscar?">
+        <!-- <img class="lupa" src="images/search.svg">-->
+        <button type="submit" style="display: none"></button>
+      </form>
+    </div>
+    <a class="header__admin-button" href="adminProductos.html">Menú Administrador</a>
+
+  </header>
+  <main>
+    <section class="new__product">
+      <form class="form_container" data-form>
+        <h2 class="new__product-title">Agregar nuevo producto</h2>
+        <input class=" new__product-input" data-url placeholder="URL imagen" required type="text">
+        <select class="form-selection" data-categoria required>
+          <option disabled selected value=""> Selecciona la categoria</option>
+          <option data-starWar value="StarWars">StarWars</option>
+          <option data-consolas value="Consolas">Consolas</option>
+          <option data-diversos value="Diversos">Diversos</option>
+        </select>
+        <input class=" new__product-input" data-nombre placeholder="Nombre del producto" required type="text">
+        <input class=" new__product-input" data-precio placeholder="Precio producto" required type="text">
+        <textarea class=" new__product-input form-description" data-descripcion placeholder="Descripcion del producto"
+          required></textarea>
+        <button class="new__product-button" data-formBtn>Enviar</button>
+      </form>
+    </section>
+  </main>
+  <!-- Contato -->
+  <section class="contacto container">
+    <div class="contacto__links">
+      <a class="contacto__links--logo" href="#header">
+        <img src="/images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <ul>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Programa fidelidade</a></li>
+        <li><a href="#">Nuestra Tiendas</a></li>
+        <li><a href="#">Quiero ser franquiciado</a></li>
+        <li><a href="#">Anuncie aqui</a></li>
+      </ul>
+    </div>
+
+    <form action="" class="contacto__form">
+      <fieldset>
+        <legend>Habla con nosotros</legend>
+        <!--<label for="name" class="sr-only">Escriba su Nombre</label>-->
+        <input id="name" type="text" class="" data-type="contact" maxlength="40" placeholder="Nombre" required />
+        <span role="alert"></span>
+        <!--<label for="message" class="sr-only">Escriba su Mensaje</label>-->
+        <textarea name="" id="message" class="" data-type="contact" placeholder="Escribe tu Mensaje" maxlength="120"
+          required></textarea>
+        <span role="alert"></span>
+        <button type="submit" class="mensaje">
+          Enviar mensaje
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p id="portfolio">
+      Desarrollado por Uriel Rivera Cantera
+    </p>
+    <p>2023</p>
+  </footer>
+
+</body>
+
+</html>

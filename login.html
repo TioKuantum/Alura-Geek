@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Inter:wght@100;200;300;700;800;900&family=Raleway:wght@100;300;400;500;600;700&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <meta content="width=device-width initial-scale=1.0" name="viewport">
+  <title>Login Alura Geek</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header class="header container">
+    <div class="header__box">
+      <a class="header__logo" href="/" id="header">
+        <img class="header__logo--img" src="images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <form action="/search" method="POST" class="header__form">
+        <input type="search" id="h__input" name="search" class="header__input" minlength="3"
+          placeholder="¿Qué deseas buscar?">
+        <button type="submit" style="display: none"></button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class="login__container">
+      <form class="login__form" data-form id="login__form">
+
+        <h2 class="login__title">Iniciar Sesion</h2>
+
+        <div>
+          <input class="login__email" data-email id="login__email" placeholder="Escribe tu correo electronico"
+            type="email">
+          <p class="login__message-error">requerido</p>
+        </div>
+        <div>
+          <input autocomplete="none" class="login__password" data-password id="login__password"
+            placeholder="Escribe tu contraseña" type="password">
+          <p class="login__message-error">requerido</p>
+        </div>
+
+        <input class="login__button loginBtn" id="login__button" type="submit" value="Entrar">
+        <p class="login__message-error">*Usuario y/o clave incorrecta</p>
+      </form>
+
+
+    </div>
+  </main>
+
+  <!-- Contato -->
+  <section class="contacto container">
+    <div class="contacto__links">
+      <a class="contacto__links--logo" href="#header">
+        <img src="/images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <ul>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Programa fidelidade</a></li>
+        <li><a href="#">Nuestra Tiendas</a></li>
+        <li><a href="#">Quiero ser franquiciado</a></li>
+        <li><a href="#">Anuncie aqui</a></li>
+      </ul>
+    </div>
+
+    <form action="" class="contacto__form">
+      <fieldset>
+        <legend>Hable con nosotros</legend>
+        <input id="name" type="text" class="" data-type="contact" maxlength="40" placeholder="Nombre" required />
+        <span role="alert"></span>
+        <textarea name="" id="message" class="" data-type="contact" placeholder="Escriba su Mensaje" maxlength="120"
+          required></textarea>
+        <span role="alert"></span>
+        <button type="submit" class="mensaje">
+          Enviar mensaje
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p id="portfolio">
+      Desarrollado por Uriel Rivera Cantera
+    </p>
+    <p>2023</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Alura Geek Inicio</title>
+  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/banner.css">
+  <link rel="stylesheet" href="styles/productos.css">
+  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/variables.css">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header class="header container">
+    <div class="header__box">
+      <a class="header__logo" href="/" id="header">
+        <img class="header__logo--img" src="images/logo.svg" alt="Logo Alura Geek" />
+      </a>
+      <form action="/search" method="POST" class="header__form">
+        <input type="search" id="h__input" name="search" class="header__input" minlength="3"
+          placeholder="¿Qué deseas buscar?">
+        <button type="submit" style="display: none"></button>
+      </form>
+    </div>
+    <a class="header__button button__void button" href="login.html">Login</a>
+    
+  </header>
+
+  <main>
+   
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner__image">
+
+      </div>
+      <div class="banner__text">
+        <h2>Julio Promocional</h2>
+        <h3>Produtos selecionados com 33% de descuento</h3>
+        <div class="banner__button">
+          <a href="#consolas" class="button__blue button">Ver Consoles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Star Wars -->
+    <section class="productos container highlight">
+      <div class="productos__text">
+        <h2>Star Wars</h2>
+        <a class="mostar__todo" href="/ver&amp;category=star-wars">Ver todo <img src="images/arow.svg" ></a>
+      </div>
+      <div class="seccion__productos" data-table>
+        
+        
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/stormtrooper-mug.jpg" alt="Cabeza de soldado Stormtrooper." />
+          <div class="producto__descripcion">
+            <h3>Cabeza Stormtrooper XYZ</h3>
+            <p>$ 60.00</p>
+
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="4341080">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/vader-pilot-lego.jpg"
+            alt="Cabeza hecha de lego de Darth Vader, de Star Wars." />
+
+          <div class="producto__descripcion">
+            <h3>LEGO Star Wars - Cabeza de Darth Vader</h3>
+            <p>$ 60.00</p>
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="9730880">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/yoda-statue.jpg" alt="Figura de Yoda de Star Wars" />
+          <div class="producto__descripcion">
+            <h3>Yoda de Star Wars</h3>
+            <p>$ 60.00</p>
+
+
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="9798714">
+              Ver produto
+            </a>
+          </div>
+
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/stormtrooper-figure.jpg"
+            alt="Figura de un accion de un soldado Stormtrooper" />
+          <div class="producto__descripcion">
+            <h3>Figura de un accion Stormtrooper: Star Wars</h3>
+            <p>$ 60.00</p>
+
+
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="8389309">
+              Ver produto
+            </a>
+          </div>
+
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/baby-yoda.jpg" alt="Figura de Baby Yoda de Star Wars" />
+          <div class="producto__descripcion">
+            <h3>Baby Yoda de Star Wars</h3>
+            <p>$ 60.00</p>
+
+
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="4187743">
+              Ver produto
+            </a>
+          </div>
+
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/kylo-figure.jpg" alt="Figura de accion de Kylo" />
+          <div class="producto__descripcion">
+            <h3>Figura de accion de Kylo</h3>
+            <p>$ 60.00</p>
+
+
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="4187743">
+              Ver produto
+            </a>
+          </div>
+        </div> 
+
+      </div>
+    </section>
+
+    <!-- Consoles -->
+    <section class="productos container" id="consolas">
+      <div class="productos__text">
+        <h2>Consolas</h2>
+        <a class="mostar__todo" href="">Ver todo <img src="images/arow.svg" ></i></a>
+      </div>
+
+      <div class="seccion__productos">
+        <div class="producto__box">
+          <img class="producto__img" src="images/xbox-one-white-controller.jpg"
+            alt="Control para Xbox One color branco" />
+          <div class="producto__descripcion">
+            <h3>Control para Xbox One color branco</h3>
+            <p>$ 60.00</p>
+          </div>
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="1800015">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/ps5-white-with-controller.jpg"
+            alt="Consola de PlayStation 5 con control incluido" />
+          <div class="producto__descripcion">
+            <h3>Consola de PlayStation 5</h3>
+            <p>$ 60.00</p>
+          </div>
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="4529578">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/nes-console.jpg" alt="Console NES 8 Bits (Nintendo)" />
+          <div class="producto__descripcion">
+            <h3>Console NES 8 Bits (Nintendo)</h3>
+            <p>$ 60.60</p>
+
+          </div>
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="8569209">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/switch-controllers.jpg"
+            alt="Controles de Nintendo Switch en color rojo y azul" />
+          <div class="producto__descripcion">
+            <h3>Controles de Nintendo Switch en color rojo y azul</h3>
+            <p>$ 60.00</p>
+          </div>
+
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="7372287">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/xbox-x-series.jpg" alt="Consola de Xbox Series X" />
+          <div class="producto__descripcion">
+            <h3>Consola de Xbox Series X </h3>
+            <p>$ 60.60</p>
+          </div>
+
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="6192546">
+              Ver produto
+            </a>
+          </div>
+        </div>
+        <div class="producto__box">
+          <img class="producto__img" src="images/gameboy.jpg" alt="Game Boy Color transparente" />
+          <div class="producto__descripcion">
+            <h3>Nintendo Game Boy</h3>
+            <p>$ 60.00</p>
+          </div>
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="6893880">
+              Ver produto
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diversos -->
+    <section class="productos container miscellaneous">
+      <div class="productos__text">
+        <h2>Diversos</h2>
+        <a class="mostar__todo" href="/ver&amp;category=diversos">Ver todo <img src="images/arow.svg" ></i></a>
+      </div>
+      <div class="seccion__productos">
+        <div class="producto__box">
+          <img class="producto__img" src="images/atari-shirt.jpg" alt="Camisa atari" />
+          <div class="producto__descripcion">
+            <h3>Camisa Atari</h3>
+            <p>$ 60.00</p>
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="8195798">
+              Ver produto
+            </a>
+          </div>
+        </div>
+        
+        <div class="producto__box">
+          <img class="producto__img" src="images/nes-shirt.jpg" alt="Camisa com impreso de un control de NES 8 Bits" />
+          <div class="producto__descripcion">
+            <h3>Camisa sens</h3>
+            <p>$ 60.00</p>
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="6959766">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/sonic-tails-statue.jpg" alt="Figura de Sonci, color azul" />
+          <div class="producto__descripcion">
+            <h3>Sega Sonic </h3>
+            <p>$ 60.00</p>
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="5456803">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" id="reloj" src="images/pink-clock-radio.jpg" alt="Reloj con radio color rosa" />
+          <div class="producto__descripcion">
+            <h3>Reloj rosa con radio</h3>
+            <p>$ 60.00</p>
+          </div>
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="2647845">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/ps-vr.jpg"
+            alt="Persona jugando con lentes de relidad virtual de PS4." />
+          <div class="producto__descripcion">
+            <h3>Lentes de realidad virtual de PS4</h3>
+            <p>$ 60.00</p>
+          </div>
+
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="415358">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+        <div class="producto__box">
+          <img class="producto__img" src="images/pikachu-plush.jpg" alt="Botarga para adulto de Pikachu" />
+          <div class="producto__descripcion">
+            <h3>Botarga de Pikachu (Grande)</h3>
+            <p>$ 60.00</p>
+          </div>
+
+
+
+
+          <div class="ver__producto">
+            <a class="productos__card--view" href="#" method="POST" data-id="7597546">
+              Ver produto
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contato -->
+  <section class="contacto container">
+    <div class="contacto__links">
+      <a class="contacto__links--logo" href="#header">
+        <img src="/images/logo.svg" alt="Loja Alura Geek" />
+      </a>
+      <ul>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Programa fidelidade</a></li>
+        <li><a href="#">Nuestra Tiendas</a></li>
+        <li><a href="#">Quiero ser franquiciado</a></li>
+        <li><a href="#">Anuncie aqui</a></li>
+      </ul>
+    </div>
+
+    <form action="" class="contacto__form">
+      <fieldset>
+        <legend>Hable con nosotros</legend>
+        
+        <input id="name" type="text" class="" data-type="contact" maxlength="40" placeholder="Nombre" required />
+        <span role="alert"></span>
+        
+        <textarea name="" id="message" class="" data-type="contact" placeholder="Escriba su Mensaje" maxlength="120"
+          required></textarea>
+        <span role="alert"></span>
+        <button type="submit" class="mensaje">
+          Enviar mensaje
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p id="portfolio">
+      Desarrollado por Uriel Rivera Cantera
+    </p>
+    <p>2023</p>
+  </footer>
+
+ 
+ <script src="script.js"></script>
+ </body>
+
+</html>
