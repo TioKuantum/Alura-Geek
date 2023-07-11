@@ -98,3 +98,16 @@
     padding-bottom: 5rem;
   }
   
+  @media screen and (max-width: 425px) {
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .productos{
+      margin: 0;
+    }
+    
+    
+}

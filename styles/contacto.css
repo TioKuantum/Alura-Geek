@@ -1,62 +1,60 @@
-.contacto{
-    font-family: var( --fuente_principal);
+.contacto {
+    font-family: var(--fuente_principal);
     display: flex;
     gap: 112px;
     align-items: center;
     justify-content: center;
-    background: #eaf2fd ;
+    background: #eaf2fd;
     padding: 2rem;
-   
+
 }
 
-.contacto__links{
+.contacto__links {
     display: flex;
     gap: 112px;
-    
-    
+
+
 }
 
-.contacto__links--logo{
+.contacto__links--logo {
     width: 11rem;
     padding: 0;
 }
 
-ul{
-    
-   
-}
+ul {}
 
-.contacto  li{
+.contacto li {
     display: flex;
     list-style: none;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.contacto a{
+.contacto a {
     text-decoration: none;
     color: black;
 }
 
-.contacto__form{
+.contacto__form {
     width: 560px;
-   padding-top: 2rem; 
+    padding-top: 2rem;
 
 }
 
-fieldset{
+fieldset {
     padding-left: 0;
-    
+
     font-weight: 800;
     width: 100%;
     display: flex;
     flex-direction: column;
     border: none;
-    
-    
+
+
 }
+
 fieldset input[type=text] {
-    
+
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -64,21 +62,21 @@ fieldset input[type=text] {
     border: none;
     border-bottom: 2px solid #C8C8C8;
     box-sizing: border-box;
-  }
+}
 
-  textarea {
+textarea {
     width: 560px;
     height: 82px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #C8C8C8;
-    
+
     background-color: #f8f8f8;
     resize: none;
-  }
+}
 
-  .mensaje {
+.mensaje {
     width: 250px;
     background-color: var(--color_fondo-o-letra_botones-2);
     border: none;
@@ -89,4 +87,54 @@ fieldset input[type=text] {
     cursor: pointer;
     margin-top: 1rem;
     padding-left: 0;
-  }
+}
+
+@media screen and (max-width: 425px) {
+    .contacto {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contacto__form{
+        padding-left: 1.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+
+    .mensaje{
+        width: 45%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contacto__links {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contacto__form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto{
+        gap: 20px;
+       
+    }
+
+    textarea{
+        
+    }
+    
+    
+    
+}
